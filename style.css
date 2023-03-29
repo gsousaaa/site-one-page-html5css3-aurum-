@@ -1,6 +1,30 @@
 /*
 Folha de estilo css site Aurum eyewear
 */
-body{
-    background-color: red;
+/* Smartphone Portrait >>>>>>>>>>>>*/
+
+/* Smartfone Landscape >>>>>>>>>>>*/
+@media (min-width: 576px){
+  body{
+    background-color: #00ffff;
+  }  
 }
+
+/* Tablet portrait >>>>>>>>>>>>>>*/
+    @media (min-width: 768px) {
+        body{
+            background-color: #ff0;
+    }
+}  
+/*tablet landscape>>>>>>>>>>>>>>>>>>*/
+    @media(min-width: 992px) {
+        body{
+           background-color: #ff6000; 
+        }
+    }
+/* PC >>>>>>>>>>>>>> */
+    @media(min-width: 1200px){
+        body{
+            background-color: #ff0000;
+        }
+    }
