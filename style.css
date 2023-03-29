@@ -1,13 +1,36 @@
 /*
 Folha de estilo css site Aurum eyewear
 */
+/* CSS RESET */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+/* Importação fontes */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em; /*(16px)*/
+}
+/* Layout */
+.container {
+    margin: 0 auto;
+}
+
 /* Smartphone Portrait >>>>>>>>>>>>*/
 
 /* Smartfone Landscape >>>>>>>>>>>*/
 @media (min-width: 576px){
   body{
     background-color: #00ffff;
-  }  
+  } 
+/* Layout */
+  .container {
+        max-width: 540px;
+  }
 }
 
 /* Tablet portrait >>>>>>>>>>>>>>*/
@@ -15,16 +38,28 @@ Folha de estilo css site Aurum eyewear
         body{
             background-color: #ff0;
     }
+    /* Layout */
+  .container {
+    max-width: 720px;
+}
 }  
 /*tablet landscape>>>>>>>>>>>>>>>>>>*/
     @media(min-width: 992px) {
         body{
            background-color: #ff6000; 
         }
+        /* Layout */
+  .container {
+    max-width: 960px;
+}
     }
 /* PC >>>>>>>>>>>>>> */
     @media(min-width: 1200px){
         body{
             background-color: #ff0000;
         }
+        /* Layout */
+  .container {
+    max-width: 1140px;
+}
     }
