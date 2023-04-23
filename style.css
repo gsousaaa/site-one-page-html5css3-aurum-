@@ -18,13 +18,28 @@ body {
 /* Layout */
 .container {
     margin: 0 auto;
-    
+
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
-    
+
+}
+.flex2 {
+    align-items: center;
+    display: flex ;
+}
+
+.Botao {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #343538;
+    padding: 10px 40px;
+    border: 2px solid #ffff;
+    border-radius: 25px;
 }
 /* topo do site */
 #topo {
@@ -36,6 +51,7 @@ body {
 }
 
 /* Smartphone Portrait >>>>>>>>>>>>*/
+@media (min-width: 375px) {
 
 /* Cabeçalho*/
 header{
@@ -73,14 +89,65 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-   
-}
+    color: #ffff;
 
+}
+/* Destaque */
+main {
+    height: 45vh;
+    background: url(img/Já\ fez\ seu\ exame\ de\ vista\ esse\ ano\ \(8\).png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+
+}
+main h1 {
+    margin-top: 40px;
+    font-size: 2.0em ;
+}
+main h2 {
+    font-size: 1em;
+    margin: 20px 0px 50px 0px;
+}
+/* Sobre nos */
+#sobrenos {
+    padding: 50px 0px;
+    background: url(img/fundo\ sobrenos.png);
+    background-size: cover;
+    background-position: center;
+
+}
+#imagemsobrenos {
+    display: none;
+}
+#textosobrenos{
+    color: #aca10a
+}
+#textosobrenos h2{
+    margin-bottom: 10px;
+}
+}
 /* Smartfone Landscape >>>>>>>>>>>*/
-@media (min-width: 576px){
+@media (min-width: 375px){
   body {
-    
-  } 
+
+  }
+
+
+
+  main h1 {
+    margin-top: 55px;
+    font-size: 1.5em;
+
+  }
+ /* Destaque */
+ main h1, main h2 {
+    text-shadow: #343538;
+ }
+
 /* Layout */
   .container {
         max-width: 540px;
@@ -90,17 +157,21 @@ nav ul li a {
 /* Tablet portrait >>>>>>>>>>>>>>*/
     @media (min-width: 768px) {
         body{
-            
+
     }
     /* Layout */
   .container {
     max-width: 720px;
 }
-}  
+}
 /*tablet landscape>>>>>>>>>>>>>>>>>>*/
     @media(min-width: 992px) {
         body{
-           
+
+        }
+        /* Destaque */
+        main {
+           height: 60vh;
         }
         /* Layout */
   .container {
@@ -110,26 +181,29 @@ nav ul li a {
 /* PC >>>>>>>>>>>>>> */
     @media(min-width: 1200px){
         body{
-        
+
         }
         /* Layout */
   .container {
     max-width: 1140px;
 }
+/* Destaque */
+
 /* Cabeçalho */
 header {
     height: 120px;
-    
+
 }
 #logo img {
     width: 189px;
     height: 189px;
     margin-top: 30px;
+    margin-right: 100px;
 }
 label {
     display: none;
 }
-nav ul { 
+nav ul {
     position: static;
     height: auto;
     background-color: transparent;
@@ -146,9 +220,33 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #c00000;
+    color: #aca10a;
 
 }
 
+main {
+    height: 75vh;
+}
 
+main h1 {
+    font-size: 2.0 em;
+}
+main h2 {
+    font-size: 1.5 em;
+}
+/* Sobre nos */
+    #sobrenos {
+        background-attachment: fixed;
+    }
+    #imagemsobrenos {
+        display: inline;
+        
+
+    }
+    #imagemsobrenos img {
+        margin-left: 20px;
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+    }
     }
