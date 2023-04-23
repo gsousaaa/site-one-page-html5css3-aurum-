@@ -67,6 +67,9 @@ header{
 }
 label {
     font-size: 3em;
+    position: fixed;
+    top: 5px;
+    right: 15px;
 
 }
 nav ul {
@@ -216,6 +219,7 @@ nav ul li {
 }
 nav ul li a {
    color: #343538;
+   
 
 }
 
