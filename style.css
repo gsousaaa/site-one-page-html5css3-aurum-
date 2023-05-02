@@ -36,6 +36,8 @@ body {
     align-items: flex-start;
 }
 
+
+
 .Botao {
     text-decoration: none;
     color: #ffff;
@@ -152,6 +154,29 @@ main h2 {
     height: 570px ;
     
 
+}
+/* Catálogo */
+#catalogo {
+    padding: 50px 10px;
+    background-size: cover;
+    background: url(img/fundo\ sobrenos.png);
+    background-position: center;
+
+}
+
+#textocatalogo {
+    padding: 50px 10px;
+    
+}
+#textocatalogo h2 {
+    margin-bottom: 20px;
+}
+#textocatalogo span {
+    display: none;
+}
+
+#qrcode img {
+    display: none;
 }
 
 
@@ -299,6 +324,20 @@ main h2 {
     
     }
 
-   
+    /* Catalogo */
+    #catalogo {
+        background-attachment: fixed;
+    }
     
+    #textocatalogo span {
+        display: inline;
+        color: #aca10a;
+
+    }
+    #qrcode img {
+        display: inline;
+        height: 200px;
+        width: 200px;
+       
+    }
     }
