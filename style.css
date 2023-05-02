@@ -31,6 +31,11 @@ body {
     display: flex ;
 }
 
+.flex3 {
+    display: flex;
+    align-items: flex-start;
+}
+
 .Botao {
     text-decoration: none;
     color: #ffff;
@@ -41,6 +46,7 @@ body {
     border: 2px solid #ffff;
     border-radius: 25px;
 }
+
 /* topo do site */
 #topo {
     position: fixed;
@@ -65,6 +71,8 @@ header{
 #check {
     display: none;
 }
+
+
 label {
     font-size: 3em;
     position: fixed;
@@ -132,6 +140,21 @@ main h2 {
 #textosobrenos h2{
     margin-bottom: 10px;
 }
+/* TikTok */
+#TikTok {
+    padding: 40px 10px;
+    background:url(img/fundo\ ttk.png);
+    border-radius: 10%;
+}
+
+.video blockquote{ 
+    width: 200px;
+    height: 570px ;
+    
+
+}
+
+
 }
 /* Smartfone Landscape >>>>>>>>>>>*/
 @media (min-width: 375px){
@@ -253,4 +276,29 @@ main h2 {
         width: 350px;
         border-radius: 50%;
     }
+    /* TikTok */
+    
+    
+    
+  
+        
+    
+    #TikTok {
+        padding: 30px 10px;
+        background:url(img/fundo\ ttk.png)
+    
+        
+    }
+
+    .video blockquote{
+        height: 590px;
+        padding: 10px 10px;
+        margin-right: 300px;
+        border-radius: 10%;
+        
+    
+    }
+
+   
+    
     }
