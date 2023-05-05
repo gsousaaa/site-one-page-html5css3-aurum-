@@ -36,6 +36,17 @@ body {
     align-items: flex-start;
 }
 
+.flex4 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.flex5 {
+    display: flex;
+    justify-content:  space-around;
+}
+
 
 
 .Botao {
@@ -57,6 +68,28 @@ body {
 
 
 }
+/* Cartoes */
+.card {
+    padding: 50px 10px;
+    margin-top: 25px;
+    width: 450px;
+    height: 800px;
+    text-align: center;
+    background-color: #e8e8e8;
+    border: 1px solid #a1a1a1;
+    border-radius: 25px;
+    
+
+}
+.card img {
+    height: 750px;
+    width: 450px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+
+
+
 
 /* Smartphone Portrait >>>>>>>>>>>>*/
 @media (min-width: 375px) {
@@ -91,6 +124,7 @@ nav ul {
     right: -100%;
     width: 100%;
     transition: all 0.5s;
+    z-index: 99999;
 }
 #check:checked ~ ul {
     right: 0;
@@ -153,6 +187,7 @@ main h2 {
     width: 200px;
     height: 570px ;
     
+    
 
 }
 /* Catálogo */
@@ -179,7 +214,41 @@ main h2 {
     display: none;
 }
 
+/* Conteúdo */
+#conteudo {
+    padding: 50px 10px;
+}
 
+#conteudo h2 {
+    text-shadow: 2px 2px 2px #343538;
+    margin-bottom: 25px;
+    text-align: center;
+}
+/* Rodapé */
+address {
+    padding: 50px 10px 50px 10px;
+    background: url(img/fundo\ adress.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff
+}
+address a {
+    text-decoration: none;
+    color: #fff;
+}
+
+address img {
+    padding-top: 50px;
+    height: 30px;
+    width: 30px;
+}
+#googlemaps {
+    display: none;
+}
+/* Rodape */
+.flex5 {
+    flex-direction: column;
+}
 }
 /* Smartfone Landscape >>>>>>>>>>>*/
 @media (min-width: 375px){
@@ -196,7 +265,7 @@ main h2 {
   }
  /* Destaque */
  main h1, main h2 {
-    text-shadow: #343538;
+    text-shadow: 1px 1px 1px #000000da;
  }
 
 /* Layout */
@@ -281,10 +350,10 @@ main {
 }
 
 main h1 {
-    font-size: 2.0 em;
+    font-size: 2.0em;
 }
 main h2 {
-    font-size: 1.5 em;
+    font-size: 1.5em;
 }
 /* Sobre nos */
     #sobrenos {
@@ -339,5 +408,13 @@ main h2 {
         height: 200px;
         width: 200px;
        
+    }
+    /* Rodapé */
+    #googlemaps {
+        display: inline;
+        
+    }
+    .fLex5 {
+        flex-direction: row-reverse;
     }
     }
