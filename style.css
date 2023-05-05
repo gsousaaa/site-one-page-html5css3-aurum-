@@ -45,6 +45,7 @@ body {
 .flex5 {
     display: flex;
     justify-content:  space-around;
+    
 }
 
 
@@ -246,9 +247,10 @@ address img {
     display: none;
 }
 /* Rodape */
-.flex5 {
-    flex-direction: column;
-}
+
+
+
+
 }
 /* Smartfone Landscape >>>>>>>>>>>*/
 @media (min-width: 375px){
